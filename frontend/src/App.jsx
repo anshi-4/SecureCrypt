@@ -38,7 +38,7 @@ import PortfolioDocs from './components/PortfolioDocs';
 import KeyStrengthMeter from './components/KeyStrengthMeter';
 import confetti from 'canvas-confetti';
 
-const API_BASE_URL = 'http://127.0.0.1:5000/api';
+const API_BASE_URL = 'https://securecrypt-backend.onrender.com';
 
 export default function App() {
   // Navigation & UI Layout State
@@ -92,13 +92,13 @@ export default function App() {
   const checkBackendHealth = async () => {
     setBackendHealth('checking');
     try {
-      console.log(`[Health Check] Checking backend server at: http://127.0.0.1:5000/health`);
-      const response = await fetch('http://127.0.0.1:5000/health');
+      console.log(`[Health Check] Checking backend server at: https://securecrypt-backend.onrender.com/health`);
+      const response = await fetch('https://securecrypt-backend.onrender.com/health');
       if (response.ok) {
         const data = await response.json();
         console.log(`[Health Check] Backend is healthy:`, data);
         setBackendHealth('online');
-        addLog(`Backend connection verified. Status: Healthy. Host: http://127.0.0.1:5000`, 'success');
+        addLog(`Backend connection verified. Status: Healthy. Host: https://securecrypt-backend.onrender.com`, 'success');
       } else {
         console.warn(`[Health Check] Backend returned bad status code: ${response.status}`);
         setBackendHealth('offline');
