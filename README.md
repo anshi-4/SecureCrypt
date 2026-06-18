@@ -1,4 +1,10 @@
-# 🔒 SecureCrypt - Enterprise Cybersecurity & Cryptographic Platform
+# SecureCrypt
+
+🔗 Live Demo: https://secure-crypt-sandy.vercel.app/
+
+🔗 GitHub Repository: https://github.com/anshi-4/SecureCrypt
+
+A full-stack cybersecurity platform implementing AES, DES, and RSA cryptography with an interactive dashboard.
 
 [![React v19](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite v8](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
